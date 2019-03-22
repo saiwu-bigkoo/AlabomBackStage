@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorAccent"
+        android:drawableTop="@drawable/logo"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_login_account"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_username" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPassWord"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_login_password"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:onClick="onSubmit"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:text="@string/login"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@drawable/bg_button_44"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Alabom管理系统</string>
+    <string name="hint_username">请输入用户名</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="accountIsNull">账号不能为空</string>
+    <string name="passWordIsNull">密码不能为空</string>
+</resources>
